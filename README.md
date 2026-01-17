@@ -10,7 +10,7 @@ Instead of hard-coding data access into the LLM, the system separates:
 
 • LLM invocation logic
 
-This mirrors how modern AI agents and enterprise GenAI platforms are designed.
+This mirrors how modern AI agents and enterprise GenAI platforms are designed.  
 
 
 
