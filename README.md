@@ -12,6 +12,8 @@ Instead of hard-coding data access into the LLM, the system separates:
 
 This mirrors how modern AI agents and enterprise GenAI platforms are designed.
 
+
+
 🧠 **Key Concepts Demonstrated**
 
 • Model Context Protocol (MCP) inspired architecture
@@ -23,6 +25,7 @@ This mirrors how modern AI agents and enterprise GenAI platforms are designed.
 • Prompt template reuse and versioning
 
 • Secure API key management using environment variables
+
 
 
 🏗️ **Architecture**
@@ -47,6 +50,7 @@ MCP Server
 Anthropic Claude (LLM)
 
 
+
 🔹 MCP Client
 
 • Embedded within the chatbot application
@@ -56,6 +60,7 @@ Anthropic Claude (LLM)
 • Injects retrieved context into the LLM prompt
 
 
+
 🔹 MCP Server
 
 • Exposes tools, data resources, and prompt templates
@@ -63,6 +68,7 @@ Anthropic Claude (LLM)
 • Remains independent of the LLM provider
 
 • Enables reuse across multiple AI clients
+
 
 
 📁 **Project Structure**
@@ -88,6 +94,7 @@ mcp_anthropic_demo/
 └── README.md
 
 
+
 🔧 **Technologies Used**
 
 • Python 3.12
@@ -97,6 +104,8 @@ mcp_anthropic_demo/
 • MCP-inspired design principles
 
 • Environment variable–based secret management
+
+
 
 ▶️ **How to Run**
 
@@ -119,6 +128,7 @@ pip install -r requirements.txt
 python run.py
 
 
+
 🧪 **Example Output**
 
 
@@ -136,6 +146,7 @@ context such as tools, data sources, and prompt templates can be supplied
 to LLM-based applications in a modular and scalable way.
 
 
+
 🔐 **Security Considerations**
 
 
@@ -144,6 +155,7 @@ to LLM-based applications in a modular and scalable way.
 • Secrets are injected via environment variables
 
 • Ready for integration with cloud secret managers (AWS, GCP, Azure)
+
 
 
 🎯 **Why This Project Matters**
@@ -157,13 +169,15 @@ to LLM-based applications in a modular and scalable way.
 • Easily extensible to FastAPI, RAG, or multi-tool systems
 
 
+
 🔮 **Future Enhancements**
 
 • Expose MCP Server via FastAPI
 
 • Add vector database (RAG + MCP hybrid)
+
 • Implement tool selection logic
 
-Support multiple MCP clients
+• Support multiple MCP clients
 
-Add tracing, logging, and cost monitoring
+• Add tracing, logging, and cost monitoring
