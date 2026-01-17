@@ -57,8 +57,11 @@ mcp_anthropic_demo/
 🔧 **Technologies Used**
 
 • Python 3.12
+
 • Anthropic Claude (Messages API)
+
 • MCP-inspired design principles
+
 • Environment variable–based secret management
 
 ▶️ **How to Run**
